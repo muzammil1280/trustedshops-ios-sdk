@@ -10,7 +10,7 @@ xcode_scheme: trustbadge_iOS-Example
 
 xcode_sdk: iphonesimulator
 
-podfile: Podfile
+podfile: Example/Podfile
 
 install:
 - bundle install
