@@ -16,7 +16,4 @@ install:
 - bundle install
 - bundle exec pod install --project-directory=Example
 
-script:
-- pod lib lint --quick
-
 after_success: slather
