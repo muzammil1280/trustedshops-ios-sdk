@@ -4,7 +4,7 @@ cache:
 - bundler
 - cocoapods
 
-xcode_workspace: trustbadge_iOS.xcworkspace
+xcode_workspace: Example/trustbadge_iOS.xcworkspace
 
 xcode_scheme: trustbadge_iOS-Example
 
