@@ -4,12 +4,19 @@ cache:
 - bundler
 - cocoapods
 
+xcode_workspace: trustbadge_iOS.xcworkspace
+
+xcode_scheme: trustbadge_iOS-Example
+
+xcode_sdk: iphonesimulator
+
+podfile: Podfile
+
 install:
 - bundle install
 - bundle exec pod install --project-directory=Example
 
 script:
-- set -o pipefail && xcodebuild test -workspace Example/trustbadge_iOS.xcworkspace -scheme trustbadge_iOS-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
 - pod lib lint --quick
 
 after_success: slather
