@@ -12,7 +12,6 @@ xcode_sdk: iphonesimulator
 
 podfile: Example/Podfile
 
-before_install:
-- bundle install
+install: bundle install
 
 after_success: slather
